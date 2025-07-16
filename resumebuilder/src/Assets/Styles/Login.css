@@ -1,0 +1,89 @@
+/* Full page layout */
+.login-page-akhy {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #eceff1, #f5f7fa);
+  padding: 20px;
+}
+
+/* Wrapper card */
+.login-wrapper-akhy {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  border-top: 4px solid #34568b;
+}
+
+/* Title */
+.login-title-akhy {
+  text-align: center;
+  font-size: 28px;
+  color: #34568b;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Form */
+.login-form-akhy {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs */
+.login-input-akhy {
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccd5e0;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9fbfd;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.login-input-akhy:focus {
+  border-color: #34568b;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Button */
+.login-button-akhy {
+  padding: 12px;
+  background-color: #34568b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button-akhy:hover {
+  background-color: #1d3557;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-wrapper-akhy {
+    padding: 28px 22px;
+  }
+
+  .login-title-akhy {
+    font-size: 24px;
+  }
+
+  .login-input-akhy {
+    font-size: 15px;
+  }
+
+  .login-button-akhy {
+    font-size: 15px;
+  }
+}

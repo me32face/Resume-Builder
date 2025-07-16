@@ -1,0 +1,194 @@
+/* Container */
+.rl-wrapper {
+  max-width: 900px;
+  margin: 40px auto 80px auto;
+  padding: 0 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.rl-heading {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+/* No resumes text */
+.rl-no-resumes {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  padding: 30px 0;
+}
+
+/* List */
+.rl-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each resume item */
+.rl-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.rl-list-item:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Resume info text */
+.rl-resume-info {
+  font-size: 1.1rem;
+  color: #333;
+  flex: 1 1 auto;
+  margin-right: 20px;
+}
+
+.rl-resume-name {
+  color: #007BFF;
+}
+
+.rl-resume-email {
+  color: #555;
+  margin-left: 6px;
+}
+
+/* View button */
+.rl-view-btn {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.rl-view-btn:hover {
+  background-color: #0056b3;
+}
+
+.rl-view-btn:focus {
+  outline: 3px solid #0056b3;
+  outline-offset: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rl-wrapper {
+    margin: 20px 10px 60px 10px;
+    padding: 15px;
+  }
+
+  .rl-heading {
+    font-size: 2rem;
+  }
+
+  .rl-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .rl-resume-info {
+    margin-right: 0;
+    margin-bottom: 12px;
+    font-size: 1rem;
+  }
+
+  .rl-view-btn {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rl-wrapper {
+    padding: 10px;
+  }
+
+  .rl-heading {
+    font-size: 1.6rem;
+  }
+
+  .rl-resume-info {
+    font-size: 0.95rem;
+  }
+
+  .rl-view-btn {
+    font-size: 1rem;
+  }
+}
+
+.rl-action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.rl-delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rl-delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+.rl-btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.rl-update-btn {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.rl-delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.download-pdf-button {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.download-pdf-button:hover {
+  background-color: #45a049;
+}

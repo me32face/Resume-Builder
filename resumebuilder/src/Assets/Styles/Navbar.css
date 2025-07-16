@@ -1,0 +1,128 @@
+.rb-navbar {
+  background-color: #283593;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.rb-navbar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.rb-navbar-logo a {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.rb-navbar-logo span {
+  color: #ffca28;
+}
+
+.rb-navbar-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.rb-navbar-link {
+  color: #c5cae9;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+.rb-navbar-link:hover,
+.rb-navbar-link.active {
+  color: #ffca28;
+}
+
+/* Hamburger menu button */
+.rb-navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.rb-hamburger,
+.rb-hamburger::before,
+.rb-hamburger::after {
+  display: block;
+  background-color: #fff;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.rb-hamburger::before,
+.rb-hamburger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.rb-hamburger::before {
+  top: -8px;
+}
+
+.rb-hamburger::after {
+  top: 8px;
+}
+
+.rb-hamburger.open {
+  background-color: transparent;
+}
+
+.rb-hamburger.open::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.rb-hamburger.open::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .rb-navbar-toggle {
+    display: block;
+  }
+
+  .rb-navbar-menu {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    background-color: #283593;
+    width: 200px;
+    height: calc(100vh - 60px);
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    border-radius: 0 0 0 12px;
+    box-shadow: -3px 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .rb-navbar-menu.active {
+    transform: translateX(0);
+  }
+
+  .rb-navbar-link {
+    font-size: 1.3rem;
+  }
+}

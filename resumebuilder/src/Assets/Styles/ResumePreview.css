@@ -1,0 +1,100 @@
+/* Container & Wrapper */
+.resume-preview-wrapper {
+  max-width: 900px;
+  margin: 2rem auto 4rem;
+  padding: 1.5rem 2rem;
+  background: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.resume-preview-container {
+  width: 100%;
+}
+
+/* Headings */
+.resume-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #1a237e;
+}
+
+.resume-contact,
+.resume-address {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: #555;
+}
+
+/* Divider */
+.divider {
+  margin: 1.2rem 0 1.5rem;
+  border: 0;
+  border-top: 2px solid #1a237e;
+  width: 60px;
+}
+
+/* Section Headings */
+.section-heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #3949ab;
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid #3949ab;
+  padding-bottom: 0.3rem;
+}
+
+/* Entries */
+.education-entry,
+.experience-entry {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+.degree, .position {
+  font-weight: 600;
+  color: #303f9f;
+}
+
+.institution, .company {
+  font-style: italic;
+  color: #5c6bc0;
+}
+
+/* Skills */
+.skills-text {
+  font-size: 1.1rem;
+  background: #e8eaf6;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  line-height: 1.5;
+  color: #1a237e;
+}
+
+/* Loading */
+.loading-text {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 3rem 0;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resume-preview-wrapper {
+    margin: 1rem 1rem 3rem;
+    padding: 1rem 1rem;
+  }
+
+  .resume-name {
+    font-size: 2rem;
+  }
+
+  .section-heading {
+    font-size: 1.4rem;
+  }
+}
